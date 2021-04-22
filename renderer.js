@@ -4,3 +4,12 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+
+// Include Push Notification
+const myNotification = new Notification('Título', {
+    body: 'Notification from the Renderer process'
+})
+
+myNotification.onclick = () => {
+    console.log('Notificação clicada')
+}
